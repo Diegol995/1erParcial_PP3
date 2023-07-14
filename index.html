@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/styles/styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main id="main-calculator">
+        <form name="calculator" id="form-calculator">
+            <input type="textfield" id="display" name="answer" value="" autocomplete="off" readonly>
+
+            <input type="button" value="7" onclick="addChar('7');" class="gray">
+            <input type="button" value="8" onclick="addChar('8');" class="gray">
+            <input type="button" value="9" onclick="addChar('9');" class="gray">
+            <input type="button" value="+" onclick="addChar('+');" class="orange">
+            <br>
+            <input type="button" value="4" onclick="addChar('4');" class="gray">
+            <input type="button" value="5" onclick="addChar('5');" class="gray">
+            <input type="button" value="6" onclick="addChar('6');" class="gray">
+            <input type="button" value="-" onclick="addChar('-');" class="orange">
+            <br>
+            <input type="button" value="1" onclick="addChar('1');" class="gray">
+            <input type="button" value="2" onclick="addChar('2');" class="gray">
+            <input type="button" value="3" onclick="addChar('3');" class="gray">
+            <input type="button" value="*" onclick="addChar('*');" class="orange">
+            <br>
+            <input type="button" value="." onclick="addChar('.');" class="gray">
+            <input type="button" value="C" onclick="clearDisplay();">
+            <input type="button" value="=" onclick="calculateResult();">
+            <input type="button" value="/" onclick="addChar('/');" class="orange">
+            <br>
+            <input type="button" value="0" onclick="addChar('0');" class="gray">
+            <input type="button" value="<-" onclick="clearChar();">
+            <input type="button" value="(" onclick="addChar('(');">
+            <input type="button" value=")" onclick="addChar(')');">
+
+        </form>
+    </main>
+    <script src="Assets/JS/script.js"></script>
+</body>
+</html>
